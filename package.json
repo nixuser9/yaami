@@ -1,10 +1,36 @@
 {
   "name": "yaami",
   "version": "1.0.0",
-  "description": "Modern cross-platform cloud storage browser supporting S3, FTP, SFTP, SMB, and more",
+  "description": "Universal cloud storage browser - Cross-platform desktop app for S3, FTP, SFTP, SSH, SCP, SMB. One tool for all your storage needs.",
   "main": "dist/main.js",
-  "author": "Your Name",
-  "license": "MIT",
+  "author": "Kishan Kumar <kishankumarc9@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/nixuser9/yaami#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nixuser9/yaami.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nixuser9/yaami/issues"
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "typescript",
+    "s3",
+    "ftp",
+    "sftp",
+    "smb",
+    "file-manager",
+    "cloud-storage",
+    "cross-platform",
+    "desktop-app",
+    "file-browser",
+    "storage-browser",
+    "ssh",
+    "scp",
+    "storage-management"
+  ],
   "scripts": {
     "dev": "node scripts/dev.js",
     "dev:renderer": "vite",
