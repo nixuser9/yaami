@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  yaami:
+    build: .
+    container_name: yaami
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - DISPLAY=:99
+      - ELECTRON_ENABLE_LOGGING=1
+    volumes:
+      # Mount for persistent connections configuration
+      - yaami-config:/root/.config/Electron
+      # Mount for downloaded files
+      - yaami-downloads:/app/downloads
+      # Optional: Mount local config for development
+      # - ./config:/app/config
+    restart: unless-stopped
+    networks:
+      - yaami-network
+
+networks:
+  yaami-network:
+    driver: bridge
+
+volumes:
+  yaami-config:
+    driver: local
+  yaami-downloads:
+    driver: local
